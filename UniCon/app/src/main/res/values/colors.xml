@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#070708</color>
+    <color name="colorPrimaryDark">#7d7d80</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="backg">#316440</color>
+    <color name="factivity">#dc5259</color>
+    <color name="sactivity">#5999b3</color>
+    <color name="tactivity">#ad2ad9</color>
+    <color name="foactivity">#85dc73</color>
+    <color name="ractivity">#73f23d</color>
+    <color name="white">#FFFFFF</color>
+</resources>

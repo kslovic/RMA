@@ -1,0 +1,42 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@color/backg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <Button
+        android:id="@+id/bStartFirstActivity"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:background="@mipmap/distance"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+    <Button
+        android:id="@+id/bStartSecondActivity"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:background="@mipmap/pressure"
+        android:layout_marginBottom="10dp"
+        />
+    <Button
+        android:id="@+id/bStartThirdActivity"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:background="@mipmap/temperature"
+        android:layout_marginBottom="10dp"
+        />
+    <Button
+        android:id="@+id/bStartFourthActivity"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:background="@mipmap/weight"
+        />
+</LinearLayout>
+</ScrollView>

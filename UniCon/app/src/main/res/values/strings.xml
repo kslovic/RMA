@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">UniCon</string>
+    <string name="convert">Convert</string>
+    <string name="distance">Convert distance:</string>
+    <string name="pressure">Convert pressure:</string>
+    <string name="temperature">Convert temperature:</string>
+    <string name="weight">Convert weight:</string>
+    <string-array name="distance_array">
+        <item>kilometre</item>
+        <item>metre</item>
+        <item>centimetre</item>
+        <item>milimetre</item>
+        <item>micrometre</item>
+        <item>nanometre</item>
+        <item>mile</item>
+        <item>yard</item>
+        <item>foot</item>
+        <item>inch</item>
+        <item>nautical mile</item>
+    </string-array>
+    <string-array name="pressure_array">
+        <item>atmosphere</item>
+        <item>bar</item>
+        <item>pascal</item>
+        <item>pound-force per square inch</item>
+        <item>torr</item>
+    </string-array>
+    <string-array name="temperature_array">
+        <item>celsius</item>
+        <item>fahrenheit</item>
+        <item>kelvin</item>
+    </string-array>
+    <string-array name="weight_array">
+        <item>tonne</item>
+        <item>kilogram</item>
+        <item>gram</item>
+        <item>miligram</item>
+        <item>microgram</item>
+        <item>pound</item>
+        <item>ounce</item>
+    </string-array>
+</resources>
