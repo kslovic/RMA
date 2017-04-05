@@ -13,6 +13,7 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class FirstActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener, View.OnClickListener {
 
@@ -68,16 +69,21 @@ public class FirstActivity extends AppCompatActivity implements AdapterView.OnIt
 
     @Override
     public void onClick(View v) {
-        Intent explicitIntent = new Intent();
-        explicitIntent.setClass(getApplicationContext(), ResultActivity.class);
-        String textDistance = spinner.getSelectedItem().toString();
-        String textDistance2 = spinner2.getSelectedItem().toString();
-        explicitIntent.putExtra(MEASURE_FIRST, textDistance);
-        explicitIntent.putExtra(MEASURE_SECOND, textDistance2);
-        double result=getDistance(textDistance, textDistance2, etSelect.getText().toString());
-        explicitIntent.putExtra(RESULT, String.valueOf(result));
-        explicitIntent.putExtra(VALUE, etSelect.getText().toString());
-        this.startActivity(explicitIntent);
+        if(etSelect.getText().toString().isEmpty()){
+            Toast.makeText(this, "You must enter a value!!!", Toast.LENGTH_SHORT).show();
+        }
+        else {
+            Intent explicitIntent = new Intent();
+            explicitIntent.setClass(getApplicationContext(), ResultActivity.class);
+            String textDistance = spinner.getSelectedItem().toString();
+            String textDistance2 = spinner2.getSelectedItem().toString();
+            explicitIntent.putExtra(MEASURE_FIRST, textDistance);
+            explicitIntent.putExtra(MEASURE_SECOND, textDistance2);
+            double result = getDistance(textDistance, textDistance2, etSelect.getText().toString());
+            explicitIntent.putExtra(RESULT, String.valueOf(result));
+            explicitIntent.putExtra(VALUE, etSelect.getText().toString());
+            this.startActivity(explicitIntent);
+        }
     }
     private double getDistance(String FirstmUnit, String SecondmUnit, String distanceString){
         double distance = Float.parseFloat(distanceString);

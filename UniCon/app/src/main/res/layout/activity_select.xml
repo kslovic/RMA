@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/lvSelect"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
     >
@@ -12,26 +13,32 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:textColor="@color/colorPrimary"
-        android:textSize="60px"
+        android:textSize="30sp"
         />
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"/>
     <EditText
         android:id="@+id/etSelect"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Enter a value..."/>
     <Spinner
         android:id="@+id/spinner2"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"/>
     <Button
         android:id="@+id/bSelect"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/convert"
-        android:textSize="60px"
+        android:textSize="30sp"
         android:background="@color/colorPrimary"
         />
 </LinearLayout>
